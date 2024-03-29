@@ -1,0 +1,52 @@
+@import "../utils/variable";
+@import "../utils/extend";
+.header_container {
+     justify-content:space-between ;
+     display: flex;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid
+}
+.header_container_right
+.header_container_left {
+   text-align: center;
+   width: 5rem;
+   height: 3rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom:1rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7C5B;
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+.nav {
+   &-left{
+
+   }
+   &-right{
+      @extend .nav-right
+   }
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+   ul {
+     display: flex;
+     gap: 20px;
+   li {
+     
+     list-style: none;
+   a {
+     color: black;
+     text-decoration: none;
+    }
+ }
+}
+}
